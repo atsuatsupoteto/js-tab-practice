@@ -4,35 +4,96 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./tab.css">
+        <title>タグとアコーディオンUI</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/tab.css">
     </head>
     <body>
+        <header class="header">
+            <h2>フットサル・ソサイチ・サッカーの違い</h2>
+        </header>
 
-        <div class="tab" id="js-tab">
-            <div class="tab-nav">
-                <a href="" class="tab-nav-item is-active" data-nav="0">Tab-0</a>
-                <a href="" class="tab-nav-item" data-nav="1">Tab-1</a>
-                <a href="" class="tab-nav-item" data-nav="2">Tab-2</a>
-                <a href="" class="tab-nav-item" data-nav="3">Tab-3</a>
+        <section class="section">
+            <div class="tab" id="js-tab">
+                <div class="tab-nav">
+                    <a href="" class="tab-nav-item is-active" data-nav="0">フットサル</a>
+                    <a href="" class="tab-nav-item" data-nav="1">ソサイチ</a>
+                    <a href="" class="tab-nav-item" data-nav="2">サッカー</a>
+                    <a href="" class="tab-nav-item" data-nav="3">比較</a>
+                </div>
+
+                <div class="tab-contents">
+                    <div class="tab-contents-item" data-content="0">
+                        <div class="accordion" id="js-accordion">
+                            <a href="" class="accordion-trigger">
+                                プレー人数
+                            </a>
+                            <div class="accordion-contents">
+                                5人(フィールド4人＋キーパー1人)
+                            </div>
+                            <a href="" class="accordion-trigger">
+                                コートサイズ
+                            </a>
+                            <div class="accordion-contents">
+                                	縦 90m～120mm <br>
+                                    横 45m〜90m
+                            </div>
+                            <a href="" class="accordion-trigger">
+                                Q3.もんだい
+                            </a>
+                            <div class="accordion-contents">
+                                A3.こたえ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents-item" data-content="1">
+                        <div class="accordion" id="js-faq">
+                            <p class="accordion-trigger">
+                                プレー人数
+                            </p>
+                            <div class="accordion-contents">
+                                7人(フィールド6人＋キーパー1人)<br>
+                                ※フィールドが最大の大きさで行う場合は、8人制に変更もあり
+                            </div>
+                            <p class="accordion-trigger">
+                                コートサイズ
+                            </p>
+                            <div class="accordion-contents">
+                                	縦 45~55m <br>
+                                    横 25~35m
+                            </div>
+                            <p class="accordion-trigger">
+                                Q3.もんだい
+                            </p>
+                            <div class="accordion-contents">
+                                A3.こたえ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents-item" data-content="2">
+                        <dl class="accordion" id="js-accordion-mini">
+                            <dt class="accordion-trigger">
+                                プレー人数
+                            </dt>
+                            <dd class="accordion-contents">
+                                11人(フィールド10人＋キーパー1人)
+                            </dd>
+                            <dt class="accordion-trigger">
+                                コートサイズ
+                            </dt>
+                            <dd class="accordion-contents">
+                                縦 32m~42m <br>
+                                横 18m~22m
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="tab-contents-item" data-content="3">
+                        タブその3
+                    </div>
+                </div>
             </div>
-
-            <div class="tab-contents">
-                <div class="tab-contents-item" data-content="0">
-                    タブその0
-                </div>
-                <div class="tab-contents-item" data-content="1">
-                    タブその1
-                </div>
-                <div class="tab-contents-item" data-content="2">
-                    タブその2
-                </div>
-                <div class="tab-contents-item" data-content="3">
-                    タブその3
-                </div>
-            </div>
-        </div>
-
-        <script type="text/javascript" src="tab.js"></script>
+        </section>
+        <script type="text/javascript" src="./assets/js/accordion.js"></script>
+        <script type="text/javascript" src="./assets/js/tab.js"></script>
     </body>
 </html>
