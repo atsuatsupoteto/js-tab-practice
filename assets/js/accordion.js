@@ -27,19 +27,25 @@
         }
     }
 
-    const dummyAccordion = new Accordion({
-        hookName: '#js-accordion',
+    const futsalAccordion = new Accordion({
+        hookName: '#js-futsal',
         tagName: 'a'
     })
 
-    const fuckingAccordion = new Accordion({
-        hookName: '#js-faq',
+    const societyAccordion = new Accordion({
+        hookName: '#js-society',
         tagName: 'p'
     })
 
-    const miniAccordion = new Accordion({
-        hookName: '#js-accordion-mini',
+    const soccerAccordion = new Accordion({
+        hookName: '#js-soccer',
         tagName: 'dt'
     })
+
+    const featureAccordion = new Accordion({
+        hookName: '#js-feature',
+        tagName: 'p'
+    })
+
 
  })();

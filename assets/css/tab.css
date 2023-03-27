@@ -1,5 +1,12 @@
 .tab {
     width: 700px;
+    position: absolute;
+    z-index: 3;
+    transform: translate(0%,0%);
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    text-align: center;
 }
 
 
@@ -29,4 +36,8 @@
 .tab-contents-item {
     display: none;
 
+}
+a.tab-nav-item:hover {
+    background: rgba(117,117,117,0.8);
+    color: white;
 }
