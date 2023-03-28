@@ -36,6 +36,12 @@ header
     position: relative;
     text-shadow: -2px -2px 0 #653905;
 }
+@media screen and (max-width: 768px){
+    .header {
+        width: 170vw;
+        font-size: 10px;
+    }
+}
 
 /*
 hero
@@ -51,4 +57,9 @@ hero
     z-index: 1;
     width: auto;
     height: 105%;
+}
+@media screen and (max-width: 768px){
+    .hero {
+        width: 170vw;
+    }
 }
